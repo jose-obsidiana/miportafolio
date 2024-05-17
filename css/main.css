@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+header {
+  color: white;
+  padding: 2rem;
+  border-bottom: 1px solid #353535;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    header nav ul li {
+      font-size: 1.5rem; }
+
+body {
+  background-color: #1A1A1A;
+  color: #8a8a8a;
+  font-family: "Montserrat", sans-serif; }
+
+p {
+  font-size: 1.3rem; }
+
+ul li {
+  list-style-type: none; }
+  ul li:hover {
+    color: #30C080; }
+
+img {
+  width: 100%; }
+
+section {
+  border-bottom: 1px solid #353535; }
+
+h1 {
+  color: #30C080; }
+
+h2 {
+  text-align: center;
+  color: #30C080;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 324px) {
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem; } }
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem; } }
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
+    main p {
+      font-size: 1.5rem; }
+    main section {
+      padding-bottom: 10rem;
+      margin-bottom: 5rem; }
+    main h2 {
+      font-size: 3rem; }
+    main h3 {
+      font-size: 2.2rem; } }
+
+@media screen and (min-width: 324px) {
+  main section .container-sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start; } }
+
+@media screen and (min-width: 1024px) {
+  main section .container-sobremi {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+    gap: 4rem; }
+    main section .container-sobremi .img-bio {
+      width: 60%; } }
+
+main section .container-portafolio .portafolio {
+  border: 1px solid #353535;
+  padding: 1rem; }
+
+@media screen and (min-width: 1024px) {
+  main section .container-portafolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%; }
+    main section .container-portafolio .img-proyect {
+      padding-bottom: 1rem; } }
+
+main section .container-habilidades div .icon-hab {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 5rem; }
+  main section .container-habilidades div .icon-hab .icon {
+    width: 10%; }
+    main section .container-habilidades div .icon-hab .icon .img-hab {
+      width: 30%; }
+    main section .container-habilidades div .icon-hab .icon .p-habilidades {
+      border: 1px solid #353535;
+      padding: 0.5rem;
+      width: max-content; }

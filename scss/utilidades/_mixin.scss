@@ -1,0 +1,59 @@
+//mixin con parametros
+@mixin width-height ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin grid ($grid-template-columns, $grid-template-rows) {
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+}
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+@mixin margin-mobile {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@mixin margin-tablet {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@mixin margin-desktop {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+@mixin mq-mobile {
+    @media screen and (min-width: 324px) {
+        @content;
+    }
+}
+
+@mixin mq-tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

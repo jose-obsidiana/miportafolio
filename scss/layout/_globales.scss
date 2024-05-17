@@ -1,0 +1,75 @@
+// fonts
+// font-family: "Montserrat", sans-serif;
+
+body {
+    background-color: $negro;
+    color: $gris-medio;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+ul {
+    li {
+        list-style-type: none;
+
+        &:hover {
+            color: $verde;
+
+        }
+    }
+}
+
+img {
+    width: 100%
+}
+
+section {
+    border-bottom: 1px solid $gris-oscuro;
+}
+
+h1 {
+    color: $verde;
+}
+
+h2 {
+    text-align: center;
+    color: $verde;
+    text-transform: uppercase;
+
+}
+
+main {
+    @include mq-mobile {
+        @include margin-mobile;
+
+
+    }
+
+    @include mq-tablet {
+        @include margin-tablet;
+    }
+
+    @include mq-desktop {
+        @include margin-desktop;
+
+        p {
+            font-size: 1.5rem
+        }
+
+        section {
+            padding-bottom: 10rem;
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+main {
+    section {
+        @include mq-mobile {
+            .container-sobremi {
+                @include flex (column, left, start);
+            }
+        }
+
+        @include mq-tablet {}
+
+        @include mq-desktop {
+            .container-sobremi {
+                @include flex (row, left, start);
+                width: 100%;
+                gap: 4rem;
+
+                .img-bio {
+                    width: 60%;
+
+                }
+
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,24 @@
+main {
+    section {
+        .container-portafolio {
+            .portafolio {
+                border: 1px solid $gris-oscuro;
+                padding: 1rem
+            }
+        }
+
+        @include mq-desktop {
+            .container-portafolio {
+                @include flex(row, center, center);
+                gap: 2rem;
+                width: 100%;
+                height: 100%;
+
+                .img-proyect {
+
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

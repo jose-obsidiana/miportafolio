@@ -1,0 +1,34 @@
+main {
+    section {
+        .container-habilidades {
+            div {
+
+
+
+                .icon-hab {
+
+                    @include flex(row, left, center);
+                    gap: 10rem;
+                    margin-bottom: 5rem;
+
+                    .icon {
+                        width: 10%;
+
+                        .img-hab {
+                            width: 30%;
+                        }
+
+                        .p-habilidades {
+                            border: 1px solid $gris-oscuro;
+                            padding: 0.5rem;
+                            width: max-content
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+    }
+}
