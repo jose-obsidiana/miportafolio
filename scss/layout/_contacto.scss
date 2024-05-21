@@ -1,0 +1,116 @@
+main {
+    section {
+        .container-general {
+            @include grid(1fr 1fr, 1fr);
+            column-gap: 2rem;
+
+            .container-contacto {
+                @include grid (0.5fr 2fr, 43% 43%);
+                @include width-height (100%, 100%);
+                background-color: $negro-claro ;
+                padding: 4rem 0 4rem 4rem;
+                row-gap: 18%;
+
+
+                .container-img {
+                    @include width-height (100%, 100%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem;
+                    border: 1px solid $verde;
+
+                    img {
+                        width: 100%;
+                        padding: 1.5rem;
+
+
+                    }
+                }
+
+                .numero-contacto {
+                    grid-template-columns: 1;
+                    display: grid;
+                    align-items: center;
+                    padding: 2rem;
+
+                    p {
+                        font-size: 1.8rem;
+
+                        &:hover {
+                            color: $violeta;
+                        }
+                    }
+                }
+            }
+
+            .container-redes {
+
+                @include grid (1fr, 50% 40%);
+                @include width-height (100%, 100%);
+                row-gap: 10%;
+
+
+                .container-iconredes {
+                    background-color: $negro-claro ;
+
+                    @include flex(row, space-around, center);
+
+                    .icon {
+                        fill: rgb(120, 116, 116);
+                        width: 45px;
+                        height: 45px;
+                        transition: fill 0.3s;
+                    }
+
+                    .icon:hover {
+                        fill: $verde;
+                    }
+
+                    .img-redes {
+                        width: 10%;
+                    }
+                }
+
+                .container-ubicacion {
+                    background-color: $negro-claro ;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 2rem 4rem;
+
+                    .cordoba {
+                        padding-left: 0.7rem;
+                        margin: 0;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+
+                        &:hover {
+                            color: $violeta;
+                        }
+                    }
+
+
+
+                    .container-img {
+                        align-items: center;
+
+                        .icon-ubic {
+                            fill: rgb(120, 116, 116);
+                            width: 30px;
+                            height: 30px;
+                            transition: fill 0.3s;
+                        }
+
+                        .icon:hover {
+                            fill: $verde;
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+}

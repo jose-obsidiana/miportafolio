@@ -2,9 +2,6 @@ main {
     section {
         .container-habilidades {
             div {
-
-
-
                 .icon-hab {
 
                     @include flex(row, left, center);
@@ -19,9 +16,13 @@ main {
                         }
 
                         .p-habilidades {
-                            border: 1px solid $gris-oscuro;
-                            padding: 0.5rem;
-                            width: max-content
+                            border: 1px solid $violeta;
+                            padding: 0 0.5rem;
+                            width: max-content;
+                            color: $violeta;
+                            margin-top: 1rem;
+                            font-size: 1.5rem;
+
                         }
                     }
 

@@ -1,0 +1,90 @@
+section {
+
+    .btn-inicio {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        color: $violeta;
+        border: 2px solid $gris-oscuro;
+        background-color: $negro-claro;
+        font-weight: 600;
+        margin-top: 4rem;
+        letter-spacing: 1px;
+    }
+
+    .btn-cv {
+        margin-right: 2rem;
+    }
+
+    @include mq-desktop {
+        .container-inicio {
+            margin: 5rem 0;
+            background-color: $negro-claro;
+            padding: 10rem;
+            padding-right: 4rem;
+            border: 2px solid $gris-oscuro;
+
+            .cont-inicio {
+                .container-datos {
+                    @include flex(row, left, end);
+
+                    .dato-contacto {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2px;
+                        padding-left: 2px;
+                        font-size: 1.4rem;
+
+                    }
+                }
+
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    font-size: 4rem;
+                }
+
+                .h2-inicio {
+                    font-size: 1.7rem;
+                    color: $violeta;
+                    margin: 2rem 0;
+                    margin-bottom: 7rem;
+                    letter-spacing: 1px;
+
+                }
+
+                .p-inicio {
+                    font-size: 1.6rem;
+                    margin-bottom: 0;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+
+                .cont-img {
+                    background-color: $gris-oscuro;
+                    border-radius: 50%;
+
+                    @include width-height(3rem, 3rem);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 2rem;
+
+
+                    .icon-inicio {
+                        fill: $gris-medio;
+                        width: 2rem;
+                    }
+
+
+                }
+
+
+            }
+
+
+        }
+
+    }
+}

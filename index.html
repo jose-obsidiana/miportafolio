@@ -11,10 +11,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontello.css">
+
     <!-- fonts   -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
 </head>
@@ -22,21 +27,120 @@
 <body>
 
     <header class="container-header">
-        <nav>
-            <ul class="lista-nav">
-                <li><a class="nav-link" href="">Sobre Mí</a></li>
-                <li><a class="nav-link" href="">Portafolio</a></li>
-                <li><a class="nav-link" href="">Habilidades</a></li>
-                <li><a class="nav-link" href="">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu" class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
+                        style="fill:#000000;">
+                        <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </label>
+            </div>
+        </div>
     </header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+
+            <nav>
+                <div class="container-img">
+                    <picture class="img-bio">
+                        <img class="img-nav"
+                            src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,ar_1:1/v1715887705/Mi%20Portafolio/DSC_6962_eourgh.jpg"
+                            alt="imagen biografía">
+                    </picture>
+                </div>
+                <ul class="lista-nav">
+                    <li><a class="nav-link" href="">Inicio</a></li>
+                    <li><a class="nav-link" href="">Sobre Mí</a></li>
+                    <li><a class="nav-link" href="">Portfolio</a></li>
+                    <li><a class="nav-link" href="">Herramientas</a></li>
+                    <li><a class="nav-link" href="">Contacto</a></li>
+                </ul>
+            </nav>
+            <label for="btn-menu" class="icon-cancel icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                    <g fill-rule="nonzero" stroke="#dddddd" stroke-width="3" stroke-linejoin="round"
+                        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                        font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(5.33333,5.33333)">
+                            <path
+                                d="M35.4,38.8c-3.2,2.4 -7.1,3.9 -11.4,3.9c-10.3,0 -18.7,-8.4 -18.7,-18.7c0,-2.6 0.6,-5.2 1.5,-7.4">
+                            </path>
+                            <path
+                                d="M12.1,9.6c3.2,-2.6 7.4,-4.3 11.9,-4.3c10.3,0 18.7,8.4 18.7,18.7c0,2.3 -0.4,4.5 -1.2,6.6">
+                            </path>
+                            <path d="M31.1,16.9l-14.2,14.2"></path>
+                            <path d="M31.1,31.1l-14.2,-14.2"></path>
+                        </g>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </div>
 
     <main>
+
+        <section>
+            <div class="container-inicio">
+                <div class="cont-inicio">
+                    <h1>María José Oliveira</h1>
+                    <h2 class="h2-inicio">Desarrolladora web FrontEnd</h2>
+                    <p class="p-inicio">Mi objetivo es transformar ideas en experiencias digitales atractivas</p>
+                    <p class="p-inicio">Y seguir creciendo en el mundo de la Programación.</p>
+
+
+                    <div class="container-datos">
+                        <button class="btn-inicio btn-cv">Descargar CV</button>
+                        <button class="btn-inicio btn-contactar">Contactar</button>
+
+                        <div class="cont-img">
+                            <svg class="icon-inicio" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+                                height="32" viewBox="0,0,256,256">
+                                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(10.66667,10.66667)">
+                                        <path
+                                            d="M12.01172,2c-5.506,0 -9.98823,4.47838 -9.99023,9.98438c-0.001,1.76 0.45998,3.47819 1.33398,4.99219l-1.35547,5.02344l5.23242,-1.23633c1.459,0.796 3.10144,1.21384 4.77344,1.21484h0.00391c5.505,0 9.98528,-4.47937 9.98828,-9.98437c0.002,-2.669 -1.03588,-5.17841 -2.92187,-7.06641c-1.886,-1.887 -4.39245,-2.92673 -7.06445,-2.92773zM12.00977,4c2.136,0.001 4.14334,0.8338 5.65234,2.3418c1.509,1.51 2.33794,3.51639 2.33594,5.65039c-0.002,4.404 -3.58423,7.98633 -7.99023,7.98633c-1.333,-0.001 -2.65341,-0.3357 -3.81641,-0.9707l-0.67383,-0.36719l-0.74414,0.17578l-1.96875,0.46484l0.48047,-1.78516l0.2168,-0.80078l-0.41406,-0.71875c-0.698,-1.208 -1.06741,-2.58919 -1.06641,-3.99219c0.002,-4.402 3.58528,-7.98437 7.98828,-7.98437zM8.47656,7.375c-0.167,0 -0.43702,0.0625 -0.66602,0.3125c-0.229,0.249 -0.875,0.85208 -0.875,2.08008c0,1.228 0.89453,2.41503 1.01953,2.58203c0.124,0.166 1.72667,2.76563 4.26367,3.76563c2.108,0.831 2.53614,0.667 2.99414,0.625c0.458,-0.041 1.47755,-0.60255 1.68555,-1.18555c0.208,-0.583 0.20848,-1.0845 0.14648,-1.1875c-0.062,-0.104 -0.22852,-0.16602 -0.47852,-0.29102c-0.249,-0.125 -1.47608,-0.72755 -1.70508,-0.81055c-0.229,-0.083 -0.3965,-0.125 -0.5625,0.125c-0.166,0.25 -0.64306,0.81056 -0.78906,0.97656c-0.146,0.167 -0.29102,0.18945 -0.54102,0.06445c-0.25,-0.126 -1.05381,-0.39024 -2.00781,-1.24024c-0.742,-0.661 -1.24267,-1.47656 -1.38867,-1.72656c-0.145,-0.249 -0.01367,-0.38577 0.11133,-0.50977c0.112,-0.112 0.24805,-0.2915 0.37305,-0.4375c0.124,-0.146 0.167,-0.25002 0.25,-0.41602c0.083,-0.166 0.04051,-0.3125 -0.02149,-0.4375c-0.062,-0.125 -0.54753,-1.35756 -0.76953,-1.85156c-0.187,-0.415 -0.3845,-0.42464 -0.5625,-0.43164c-0.145,-0.006 -0.31056,-0.00586 -0.47656,-0.00586z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <p class="dato-contacto">+54 9 351 2191686</p>
+
+                        <div class="cont-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                            </svg>
+                        </div>
+                        <p class="dato-contacto">proyectos.joseoliveira@gmail.com</p>
+
+                    </div>
+
+
+                </div>
+        </section>
+
+
+
+
         <section>
             <div class="container-sobremi">
                 <div>
-                    <h1>Hola</h1>
                     <h2>Sobre Mí</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum deserunt rerum magni impedit
                         consectetur voluptatum, debitis quaerat est dolor repellendus iusto, labore doloribus vitae
@@ -50,8 +154,8 @@
                 </div>
 
                 <picture class="img-bio">
-                    <img src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,ar_1:1/v1715887705/Mi%20Portafolio/DSC_6962_eourgh.jpg"
-                        alt="imagen biografía">
+                    <img
+                        src="https://res.cloudinary.com/dit43qjpn/image/upload/v1716308430/Mi%20Portafolio/cloduinar_jftqy5.jpg">
                 </picture>
             </div>
         </section>
@@ -63,28 +167,22 @@
                     <img class="img-proyect"
                         src="https://res.cloudinary.com/dit43qjpn/image/upload/v1715891469/Mi%20Portafolio/ARA_jq9hxq.png"
                         alt="">
-                    <h3>HTML, CSS, JAVASCRIPT</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita non perspiciatis quas
-                        laborum quisquam doloremque nam eius, modi in, eligendi ullam quia enim. Hic cumque beatae id
-                        repellat eum.</p>
+                    <h3>HTML, CSS</h3>
+                    <p>Sitio Web desarrollado para el Curso de Desarrollo Web de Coderhouse.</p>
                 </div>
                 <div class="portafolio proyect-dos">
                     <img class="img-proyect"
                         src="https://res.cloudinary.com/dit43qjpn/image/upload/v1715891471/Mi%20Portafolio/espacionande_kopgxz.png"
                         alt="">
                     <h3>HTML, SASS, JAVASCRIPT</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ratione illum veniam
-                        perferendis corporis ipsa nam laborum optio dolorum corrupti impedit natus, laudantium
-                        doloremque, deleniti quisquam, porro dolore labore itaque.</p>
+                    <p>Sitio Web desarrollado para el Curso de Javascript de Coderhouse.</p>
                 </div>
                 <div class="portafolio proyect-tres">
                     <img class="img-proyect"
                         src="https://res.cloudinary.com/dit43qjpn/image/upload/v1715891470/Mi%20Portafolio/jg_l3uldw.png"
                         alt="">
                     <h3>REACT JS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repellat aliquid ipsa dignissimos
-                        nesciunt impedit maxime ratione, vel consequuntur dolor repellendus cum, quibusdam ea quo odit
-                        optio architecto nisi deserunt.</p>
+                    <p>Sitio web E-commerce, desarrollado durante el curso de React JS.</p>
                 </div>
 
             </div>
@@ -93,7 +191,7 @@
 
         <section>
             <div class="container-habilidades">
-                <h2>Habilidades</h2>
+                <h2>Herramientas</h2>
 
                 <div>
                     <h3>Lenguajes</h3>
@@ -147,7 +245,6 @@
                         <div class="icon">
                             <img class="img-hab" src="/img/visual.png" alt="">
                             <p class="p-habilidades">VisualStudioCode</p>
-
                         </div>
 
                     </div>
@@ -159,8 +256,124 @@
         </section>
 
         <section>
-            <div class="container-contacto">
-                <h2>Contacto</h2>
+            <h2>Contacto</h2>
+            <div class="container-general">
+
+                <div class="container-contacto">
+                    <div class="container-img">
+                        <a href="https://wa.me/3512191686" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="numero-contacto">
+                        <h4>Celular</h4>
+                        <a href="https://wa.me/3512191686" target="_blank">
+                            <p>+54 9 351 2191686</p>
+                        </a>
+                    </div> <!---->
+
+
+                    <div class="container-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                        </svg>
+
+                    </div>
+                    <div class="numero-contacto">
+                        <h4>Email</h4>
+                        <p>proyectos.joseoliveira@gmail.com</p>
+                    </div>
+                </div>
+
+
+                <div class="container-redes">
+                    <div class="container-iconredes">
+
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0,0,256,256">
+                            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path
+                                        d="M36.5,6h-25c-3.032,0 -5.5,2.468 -5.5,5.5v25c0,3.032 2.468,5.5 5.5,5.5h25c3.032,0 5.5,-2.468 5.5,-5.5v-25c0,-3.032 -2.468,-5.5 -5.5,-5.5zM18,34c0,0.553 -0.447,1 -1,1h-3c-0.553,0 -1,-0.447 -1,-1v-13c0,-0.553 0.447,-1 1,-1h3c0.553,0 1,0.447 1,1zM15.5,18c-1.381,0 -2.5,-1.119 -2.5,-2.5c0,-1.381 1.119,-2.5 2.5,-2.5c1.381,0 2.5,1.119 2.5,2.5c0,1.381 -1.119,2.5 -2.5,2.5zM35,34c0,0.553 -0.447,1 -1,1h-3c-0.553,0 -1,-0.447 -1,-1v-7.5c0,-1.379 -1.121,-2.5 -2.5,-2.5c-1.379,0 -2.5,1.121 -2.5,2.5v7.5c0,0.553 -0.447,1 -1,1h-3c-0.553,0 -1,-0.447 -1,-1v-13c0,-0.553 0.447,-1 1,-1h3c0.553,0 1,0.447 1,1v0.541c1.063,-0.955 2.462,-1.541 4,-1.541c3.309,0 6,2.691 6,6z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg> <!---->
+
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0,0,256,256">
+                            <g fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(8,8)">
+                                    <path
+                                        d="M16,4c-6.62891,0 -12,5.37109 -12,12c0,5.30078 3.4375,9.80078 8.20703,11.38672c0.60156,0.10938 0.82031,-0.25781 0.82031,-0.57812c0,-0.28516 -0.01172,-1.03906 -0.01562,-2.03906c-3.33984,0.72266 -4.04297,-1.60937 -4.04297,-1.60937c-0.54687,-1.38672 -1.33203,-1.75781 -1.33203,-1.75781c-1.08984,-0.74219 0.08203,-0.72656 0.08203,-0.72656c1.20313,0.08594 1.83594,1.23438 1.83594,1.23438c1.07031,1.83594 2.80859,1.30469 3.49219,1c0.10938,-0.77734 0.42188,-1.30469 0.76172,-1.60547c-2.66406,-0.30078 -5.46484,-1.33203 -5.46484,-5.92969c0,-1.3125 0.46875,-2.38281 1.23438,-3.22266c-0.12109,-0.30078 -0.53516,-1.52344 0.11719,-3.17578c0,0 1.00781,-0.32031 3.30078,1.23047c0.95703,-0.26562 1.98438,-0.39844 3.00391,-0.40234c1.01953,0.00391 2.04688,0.13672 3.00391,0.40234c2.29297,-1.55078 3.29688,-1.23047 3.29688,-1.23047c0.65625,1.65234 0.24609,2.875 0.12109,3.17578c0.76953,0.83984 1.23047,1.91016 1.23047,3.22266c0,4.60938 -2.80469,5.62109 -5.47656,5.92188c0.42969,0.36719 0.8125,1.10156 0.8125,2.21875c0,1.60547 -0.01172,2.89844 -0.01172,3.29297c0,0.32031 0.21484,0.69531 0.82422,0.57813c4.76563,-1.58984 8.19922,-6.08594 8.19922,-11.38672c0,-6.62891 -5.37109,-12 -12,-12z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0,0,256,256">
+                            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(8,8)">
+                                    <path
+                                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg> <!---->
+
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                            viewBox="0,0,256,256">
+                            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path
+                                        d="M24,4c-11.028,0 -20,8.972 -20,20c0,10.006 7.394,18.295 17,19.75v-14.75h-4c-0.552,0 -1,-0.447 -1,-1v-3c0,-0.553 0.448,-1 1,-1h4v-3.632c0,-4.751 2.427,-7.368 6.834,-7.368c1.786,0 3.195,0.124 3.254,0.129c0.516,0.046 0.912,0.478 0.912,0.996v3.375c0,0.553 -0.448,1 -1,1h-2c-1.103,0 -2,0.897 -2,2v3.5h4c0.287,0 0.56,0.123 0.75,0.338c0.19,0.216 0.278,0.502 0.243,0.786l-0.375,3c-0.063,0.5 -0.489,0.876 -0.993,0.876h-3.625v14.75c9.606,-1.455 17,-9.744 17,-19.75c0,-11.028 -8.972,-20 -20,-20z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+
+
+
+                    </div>
+                    <div class="container-ubicacion">
+                        <div class="container-img">
+                            <svg class="icon-ubic" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-map-pin-filled" width="44" height="44"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                                    stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h4 class="cordoba">Córdoba Capital, Argentina</h4>
+                    </div>
+                </div>
+            </div>
+
+
+
             </div>
         </section>
     </main>
