@@ -3,6 +3,23 @@ main {
         @include mq-mobile {
             .container-sobremi {
                 @include flex (column, left, start);
+
+                div {
+                    p {
+                        color: $gris-claro;
+                        padding-bottom: 2rem;
+                    }
+                }
+
+                .container-certificados {
+                    .img-bio {
+                        opacity: 0.5;
+
+                        .img-react {
+                            border: 4px solid #FF01FD;
+                        }
+                    }
+                }
             }
         }
 
@@ -12,12 +29,25 @@ main {
             .container-sobremi {
                 @include flex (row, left, start);
                 width: 100%;
-                gap: 4rem;
+                gap: 8rem;
 
-                .img-bio {
-                    width: 60%;
 
+                .container-certificados {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    padding: 6rem 0 0 0;
+
+                    .img-bio {
+                        width: 100%;
+
+
+                        img {
+                            width: 20rem;
+                        }
+                    }
                 }
+
 
             }
 

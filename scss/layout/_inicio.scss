@@ -1,5 +1,4 @@
 section {
-
     .btn-inicio {
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -12,37 +11,67 @@ section {
         letter-spacing: 1px;
     }
 
-    .btn-cv {
-        margin-right: 2rem;
+    .btn-contactar {
+        cursor: pointer;
     }
+
+    .container-inicio {
+        .cont-inicio {
+
+            /* boton de contacto*/
+            #btn-contacto {
+                display: none;
+            }
+
+            #btn-contacto:checked~.datos-de-contacto {
+                transition: all 500ms ease;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .datos-de-contacto {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .container-grid {
+                @include grid(60% 40%, 1fr)
+            }
+
+            .cubo {
+
+                width: 7rem;
+                position: relative;
+                z-index: 0;
+                left: 60%;
+                opacity: 0.1;
+            }
+
+            .cubo-dos {
+                grid-column: 2;
+                top: 20%;
+                left: 50%;
+            }
+
+        }
+    }
+
+
 
     @include mq-desktop {
         .container-inicio {
             margin: 5rem 0;
             background-color: $negro-claro;
-            padding: 10rem;
-            padding-right: 4rem;
+            padding: 7rem 7rem 1rem 7rem;
             border: 2px solid $gris-oscuro;
 
             .cont-inicio {
-                .container-datos {
-                    @include flex(row, left, end);
-
-                    .dato-contacto {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 2px;
-                        padding-left: 2px;
-                        font-size: 1.4rem;
-
-                    }
-                }
-
                 h1 {
                     text-transform: uppercase;
                     font-size: 3rem;
                     font-weight: 600;
                     font-size: 4rem;
+                    letter-spacing: 1px;
                 }
 
                 .h2-inicio {
@@ -61,30 +90,69 @@ section {
                     font-weight: 500;
                 }
 
-                .cont-img {
-                    background-color: $gris-oscuro;
-                    border-radius: 50%;
-
-                    @include width-height(3rem, 3rem);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 2rem;
-
-
-                    .icon-inicio {
-                        fill: $gris-medio;
-                        width: 2rem;
-                    }
-
-
+                .container-datos {
+                    @include flex(row, left, baseline);
+                    gap: 2rem;
                 }
 
 
+                .datos-de-contacto {
+                    @include flex(row, left, self-end);
+                    margin-top: 3rem;
+                    gap: 2rem;
+
+                    .flex-row {
+                        @include flex(row, left, self-end);
+                        margin-bottom: 1rem;
+                        padding-bottom: 1rem;
+
+
+                        .dato-contacto {
+                            padding-left: 2px;
+                            font-size: 1.9rem;
+                            font-weight: 500;
+                            margin-bottom: 2px;
+
+                            &:hover {
+                                color: $verde;
+                            }
+                        }
+
+                        .cont-img {
+                            @include width-height(3rem, 3rem);
+                            display: flex;
+                            justify-content: center;
+                            align-items: normal;
+                            border-radius: 50%;
+
+                            .icon-inicio {
+                                fill: $gris-medio;
+                                width: 2rem;
+                                padding-bottom: 3px;
+
+                                &:hover {
+                                    fill: $verde;
+                                }
+                            }
+
+                            .icon-mail {
+                                width: 2rem;
+                            }
+
+                        }
+
+                    }
+                }
+
             }
-
-
         }
 
     }
+
+    @include mq-desktop2 {
+        .container-inicio {
+            padding: 10rem 10rem 4rem 10rem;
+        }
+    }
+
 }

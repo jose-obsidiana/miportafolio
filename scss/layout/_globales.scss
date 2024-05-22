@@ -72,25 +72,27 @@ main {
         @include margin-tablet;
     }
 
+
+
     @include mq-desktop {
         margin: 0 18%;
         min-height: 100vh;
         position: relative;
         width: 82%;
-        padding: 4rem 12rem;
+        padding: 4rem 6rem;
 
         p {
             font-size: 1.5rem
         }
 
         section {
-            padding-bottom: 10rem;
-            margin-bottom: 5rem;
+            padding-bottom: 5rem;
+
         }
 
         h2 {
             font-size: 4rem;
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
 
         }
 
@@ -102,5 +104,17 @@ main {
         h4 {
             font-size: 1.7rem;
         }
+    }
+
+    @include mq-desktop2 {
+        padding: 4rem 12rem;
+
+    }
+
+}
+
+@include mq-desktop {
+    header {
+        display: none;
     }
 }
