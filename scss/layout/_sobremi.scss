@@ -4,6 +4,14 @@ main {
             .container-sobremi {
                 @include flex (column, left, start);
 
+                .negrita {
+                    font-weight: 600;
+                }
+
+                .flecha {
+                    color: $verde;
+                }
+
                 div {
                     p {
                         color: $gris-claro;
@@ -11,13 +19,66 @@ main {
                     }
                 }
 
-                .container-certificados {
-                    .img-bio {
-                        opacity: 0.5;
-
-                        .img-react {
-                            border: 4px solid #FF01FD;
+                .container-datospersonales {
+                    ul {
+                        li {
+                            .negrita {
+                                letter-spacing: 0.5px;
+                            }
                         }
+                    }
+                }
+
+
+                .container-certificados {
+                    .img-box:hover .capa {
+                        transform: scale(1);
+                    }
+
+                    .img-box {
+                        opacity: 0.9;
+                        position: relative;
+
+                        .img-border {
+                            border: 3px solid #B512A8;
+                        }
+
+                        .capa {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            @include width-height(100%, 100%);
+                            background-color: rgba(0, 0, 0, 0.6);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                            transition: .3s ease;
+
+                            img {
+                                width: 2rem;
+                                position: relative;
+                                z-index: 0;
+                                opacity: 0.7;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+                            }
+
+                            p {
+                                padding-bottom: 0;
+                                color: white;
+                                font-weight: 500;
+                            }
+
+                        }
+
+                    }
+
+                    .img-react {
+                        border: 4px solid #FF01FD;
                     }
                 }
             }
@@ -29,29 +90,53 @@ main {
             .container-sobremi {
                 @include flex (row, left, start);
                 width: 100%;
-                gap: 8rem;
+                gap: 3rem;
+
+                .container-datospersonales {
+                    @include grid (1fr 1fr, 1fr);
+                    margin-bottom: 4rem;
+
+                    .list-right {
+                        grid-column: 2;
+                        margin-left: 1.5rem;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 1.5rem;
+                            padding-bottom: 1rem;
+
+                        }
+                    }
+
+                    .flecha {
+                        font-size: 2rem;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+
+                    .negrita {
+                        font-size: 1.5rem;
+                    }
+                }
 
 
                 .container-certificados {
                     display: flex;
                     flex-direction: column;
                     gap: 2rem;
-                    padding: 6rem 0 0 0;
+                    padding: 10rem 0 0 0;
 
-                    .img-bio {
+                    .img-box {
                         width: 100%;
-
 
                         img {
                             width: 20rem;
                         }
                     }
                 }
-
-
             }
 
         }
-
     }
+
 }
