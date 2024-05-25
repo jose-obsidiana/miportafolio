@@ -15,11 +15,13 @@ main {
                 div {
                     p {
                         color: $gris-claro;
-                        padding-bottom: 2rem;
+
                     }
                 }
 
                 .container-datospersonales {
+                    margin-bottom: 4rem;
+
                     ul {
                         li {
                             .negrita {
@@ -31,6 +33,8 @@ main {
 
 
                 .container-certificados {
+                    display: none;
+
                     .img-box:hover .capa {
                         transform: scale(1);
                     }
@@ -38,6 +42,7 @@ main {
                     .img-box {
                         opacity: 0.9;
                         position: relative;
+                        @include width-height(100%, 100%);
 
                         .img-border {
                             border: 3px solid #B512A8;
@@ -84,7 +89,16 @@ main {
             }
         }
 
-        @include mq-tablet {}
+        @include mq-tablet {
+
+            .container-sobremi {
+                div {
+                    p {
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+        }
 
         @include mq-desktop {
             .container-sobremi {
@@ -125,6 +139,7 @@ main {
                     flex-direction: column;
                     gap: 2rem;
                     padding: 10rem 0 0 0;
+
 
                     .img-box {
                         width: 100%;

@@ -1,10 +1,11 @@
 header {
-    @include width-height(100%, 100px);
+    @include width-height(100%, 50px);
     position: fixed;
     top: 0;
     left: 0;
     background-color: $negro;
     border-bottom: 1px solid $negro-claro;
+    z-index: 1;
 
     .container {
         width: 90%;
@@ -46,6 +47,7 @@ header {
     /* para ocultar el menu lateral*/
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
 
 
     .cont-menu {
@@ -143,6 +145,7 @@ header {
         opacity: 1;
         visibility: visible;
         background-color: rgba(0, 0, 0, 0);
+        z-index: 0;
 
 
         .cont-menu {

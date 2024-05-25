@@ -1,22 +1,52 @@
 section {
     .btn-inicio {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
-        padding: 1rem 2rem;
+        padding: 0.5rem 0;
         color: $violeta;
         border: 2px solid $gris-oscuro;
         background-color: $negro-claro;
         font-weight: 600;
-        margin-top: 4rem;
+        margin-top: 2rem;
         letter-spacing: 1px;
+        width: 100%;
     }
 
     .btn-contactar {
         cursor: pointer;
+        text-align: center;
+        margin-top: 1rem;
     }
 
     .container-inicio {
+        border: 2px solid $gris-oscuro;
+        background-color: $negro-claro;
+        margin: 8rem 0;
+        padding: 4rem 2rem 2rem 2rem;
+
+
         .cont-inicio {
+            height: 40vh;
+
+            h1 {
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 1.9rem;
+            }
+
+            h2 {
+                color: $violeta;
+                letter-spacing: 1px;
+                font-size: 1.3rem;
+                grid-column: 1/3;
+                margin: 1rem 0 5rem 0;
+
+            }
+
+            .p-inicio {
+                font-style: italic;
+            }
 
             /* boton de contacto*/
             #btn-contacto {
@@ -27,24 +57,66 @@ section {
                 transition: all 500ms ease;
                 opacity: 1;
                 visibility: visible;
+
             }
 
             .datos-de-contacto {
                 opacity: 0;
                 visibility: hidden;
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+
+                .flex-row {
+                    @include flex(row, left, self-start);
+
+                    .dato-contacto {
+
+                        &:hover {
+                            color: $verde;
+                        }
+                    }
+
+                    .cont-img {
+                        @include width-height(2rem, 100%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        border-radius: 50%;
+
+                        .icon-inicio {
+                            fill: $gris-medio;
+                            width: 2rem;
+                            padding-bottom: 3px;
+                            height: 100%;
+
+                            &:hover {
+                                fill: $verde;
+                            }
+                        }
+
+                        .icon-mail {
+                            width: 2rem;
+                        }
+
+                    }
+
+                }
             }
 
-            .container-grid {
-                @include grid(60% 40%, 1fr)
+
+
+
+            .cubos {
+                display: none;
             }
 
             .cubo {
-
                 width: 7rem;
                 position: relative;
                 z-index: 0;
                 left: 60%;
                 opacity: 0.1;
+
             }
 
             .cubo-dos {
@@ -56,37 +128,79 @@ section {
         }
     }
 
+    @include mq-tablet {
+        .container-datos {
+            margin-top: 2rem;
+
+        }
+
+        .btn-inicio {
+            font-size: 1.4rem;
+            padding: 1rem 0;
+        }
 
 
-    @include mq-desktop {
         .container-inicio {
-            margin: 5rem 0;
-            background-color: $negro-claro;
-            padding: 7rem 7rem 1rem 7rem;
-            border: 2px solid $gris-oscuro;
+            margin: 10rem 0;
+            padding: 8rem 8rem 0 8rem;
 
             .cont-inicio {
+                height: 100%;
+
+                .container-grid {
+                    @include grid(60% 40%, 1fr)
+                }
+
                 h1 {
-                    text-transform: uppercase;
-                    font-size: 3rem;
-                    font-weight: 600;
+                    font-size: 3.5rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                    grid-row: 1;
+                }
+
+                .p-inicio {
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @include mq-desktop {
+        .btn-inicio {
+            margin-top: 4rem;
+
+        }
+
+        .container-datos {
+            width: 70%;
+        }
+
+        .container-inicio {
+            margin: 5rem 0;
+            padding: 7rem 7rem 1rem 7rem;
+
+            .cont-inicio {
+                .cubos {
+                    display: block;
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+
+                h1 {
                     font-size: 4rem;
-                    letter-spacing: 1px;
                 }
 
                 .h2-inicio {
                     font-size: 1.7rem;
-                    color: $violeta;
                     margin: 2rem 0;
                     margin-bottom: 7rem;
-                    letter-spacing: 1px;
-
                 }
 
                 .p-inicio {
                     font-size: 1.6rem;
-                    margin-bottom: 0;
-                    font-style: italic;
                     font-weight: 500;
                 }
 
@@ -97,12 +211,11 @@ section {
 
 
                 .datos-de-contacto {
-                    @include flex(row, left, self-end);
+
                     margin-top: 3rem;
                     gap: 2rem;
 
                     .flex-row {
-                        @include flex(row, left, self-end);
                         margin-bottom: 1rem;
                         padding-bottom: 1rem;
 
@@ -113,9 +226,6 @@ section {
                             font-weight: 500;
                             margin-bottom: 2px;
 
-                            &:hover {
-                                color: $verde;
-                            }
                         }
 
                         .cont-img {
@@ -152,6 +262,12 @@ section {
     @include mq-desktop2 {
         .container-inicio {
             padding: 10rem 10rem 4rem 10rem;
+
+            .cont-inicio {
+                .datos-de-contacto {
+                    @include flex(row, left, self-end);
+                }
+            }
         }
     }
 
