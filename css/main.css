@@ -10,7 +10,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1a1a1a;
+  background-color: #191919;
   border-bottom: 1px solid #212121;
   z-index: 1; }
   header .container {
@@ -116,18 +116,18 @@ header {
         display: none; } }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #191919;
   color: #929292;
   font-family: "Montserrat", sans-serif; }
 
 p {
-  font-size: 1.3rem; }
+  font-size: 1.4rem; }
 
 ul {
   padding: 0; }
   ul li {
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #c8c8c8; }
 
 span {
@@ -139,7 +139,7 @@ img {
 
 section {
   border-bottom: 1px solid #393939;
-  padding-bottom: 2rem; }
+  padding-bottom: 4rem; }
 
 h1 {
   color: #30C080;
@@ -235,13 +235,13 @@ section .container-inicio {
   margin: 8rem 0;
   padding: 4rem 2rem 2rem 2rem; }
   section .container-inicio .cont-inicio {
-    height: 40vh;
+    height: 60vh;
     /* boton de contacto*/ }
     section .container-inicio .cont-inicio h1 {
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 1px;
-      font-size: 1.9rem; }
+      font-size: 2rem; }
     section .container-inicio .cont-inicio h2 {
       color: #d65cdc;
       letter-spacing: 1px;
@@ -530,84 +530,90 @@ main section .container-habilidades .container-hab {
         background-color: #212121;
         margin-left: 5px; }
 
-main section .container-general {
+main section .container-general .container-contacto {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 2rem; }
-  main section .container-general .container-contacto {
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 43% 43%;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 41% 41%;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  padding: 2rem;
+  row-gap: 18%;
+  margin-bottom: 1rem; }
+  main section .container-general .container-contacto .container-img {
     width: 100%;
     height: 100%;
-    background-color: #212121;
-    padding: 4rem 0 4rem 4rem;
-    row-gap: 18%; }
-    main section .container-general .container-contacto .container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #30C080; }
+    main section .container-general .container-contacto .container-img img {
       width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      border: 1px solid #30C080; }
-      main section .container-general .container-contacto .container-img img {
-        width: 100%;
-        padding: 1.5rem; }
-    main section .container-general .container-contacto .numero-contacto {
-      grid-template-columns: 1;
-      display: grid;
-      align-items: center;
-      padding: 2rem; }
-      main section .container-general .container-contacto .numero-contacto p {
-        font-size: 1.8rem; }
-        main section .container-general .container-contacto .numero-contacto p:hover {
-          color: #d65cdc; }
-  main section .container-general .container-redes {
+      padding: 1.5rem; }
+  main section .container-general .container-contacto .numero-contacto {
+    grid-template-columns: 1;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 40%;
-    width: 100%;
-    height: 100%;
-    row-gap: 10%; }
-    main section .container-general .container-redes .container-iconredes {
-      background-color: #212121;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+    align-items: center;
+    padding: 2rem; }
+    main section .container-general .container-contacto .numero-contacto p:hover {
+      color: #d65cdc; }
+
+main section .container-general .container-redes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 40%;
+  width: 100%;
+  height: 100%;
+  row-gap: 10%; }
+  main section .container-general .container-redes .container-iconredes {
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    main section .container-general .container-redes .container-iconredes .icon {
+      fill: #787474;
+      width: 45px;
+      height: 45px;
+      transition: fill 0.3s; }
+    main section .container-general .container-redes .container-iconredes .icon:hover {
+      fill: #30C080; }
+    main section .container-general .container-redes .container-iconredes .img-redes {
+      width: 10%; }
+  main section .container-general .container-redes .container-ubicacion {
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 4rem; }
+    main section .container-general .container-redes .container-ubicacion .cordoba {
+      padding-left: 0.7rem;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 400; }
+      main section .container-general .container-redes .container-ubicacion .cordoba:hover {
+        color: #d65cdc; }
+    main section .container-general .container-redes .container-ubicacion .container-img {
       align-items: center; }
-      main section .container-general .container-redes .container-iconredes .icon {
+      main section .container-general .container-redes .container-ubicacion .container-img .icon-ubic {
         fill: #787474;
-        width: 45px;
-        height: 45px;
+        width: 30px;
+        height: 30px;
         transition: fill 0.3s; }
-      main section .container-general .container-redes .container-iconredes .icon:hover {
+      main section .container-general .container-redes .container-ubicacion .container-img .icon:hover {
         fill: #30C080; }
-      main section .container-general .container-redes .container-iconredes .img-redes {
-        width: 10%; }
-    main section .container-general .container-redes .container-ubicacion {
-      background-color: #212121;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 2rem 4rem; }
-      main section .container-general .container-redes .container-ubicacion .cordoba {
-        padding-left: 0.7rem;
-        margin: 0;
-        font-size: 1.8rem;
-        font-weight: 400; }
-        main section .container-general .container-redes .container-ubicacion .cordoba:hover {
-          color: #d65cdc; }
-      main section .container-general .container-redes .container-ubicacion .container-img {
-        align-items: center; }
-        main section .container-general .container-redes .container-ubicacion .container-img .icon-ubic {
-          fill: #787474;
-          width: 30px;
-          height: 30px;
-          transition: fill 0.3s; }
-        main section .container-general .container-redes .container-ubicacion .container-img .icon:hover {
-          fill: #30C080; }
+
+@media screen and (min-width: 1024px) {
+  main section .container-general {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem; }
+    main section .container-general .container-contacto {
+      padding: 4rem 0 4rem 4rem; }
+      main section .container-general .container-contacto .numero-contacto p {
+        font-size: 1.8rem; } }
 
 @media screen and (min-width: 1024px) {
   section .container-sobremi .boot-carousel {

@@ -1,15 +1,13 @@
 main {
     section {
         .container-general {
-            @include grid(1fr 1fr, 1fr);
-            column-gap: 2rem;
-
             .container-contacto {
-                @include grid (0.5fr 2fr, 43% 43%);
+                @include grid (0.5fr 2fr, 41% 41%);
                 @include width-height (100%, 100%);
                 background-color: $negro-claro ;
-                padding: 4rem 0 4rem 4rem;
+                padding: 2rem;
                 row-gap: 18%;
+                margin-bottom: 1rem;
 
 
                 .container-img {
@@ -35,8 +33,6 @@ main {
                     padding: 2rem;
 
                     p {
-                        font-size: 1.8rem;
-
                         &:hover {
                             color: $violeta;
                         }
@@ -109,6 +105,23 @@ main {
 
                     }
 
+                }
+            }
+        }
+
+        @include mq-desktop {
+            .container-general {
+                @include grid(1fr 1fr, 1fr);
+                column-gap: 2rem;
+
+                .container-contacto {
+                    padding: 4rem 0 4rem 4rem;
+
+                    .numero-contacto {
+                        p {
+                            font-size: 1.8rem;
+                        }
+                    }
                 }
             }
         }
