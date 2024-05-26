@@ -70,9 +70,9 @@ header {
         justify-content: center; }
         .container-menu .cont-menu nav .container-img .img-bio .img-nav {
           border-radius: 50%;
-          width: 60%;
+          width: 55%;
           border: 5px solid #393939;
-          margin-bottom: 5rem; }
+          margin-bottom: 3rem; }
       .container-menu .cont-menu nav ul {
         display: flex;
         flex-direction: column;
@@ -84,7 +84,7 @@ header {
           font-size: 1.5rem; }
           .container-menu .cont-menu nav ul li a {
             text-transform: uppercase;
-            padding: 20px;
+            padding: 15px;
             border-left: 5px solid transparent;
             transition: all 400ms ease;
             letter-spacing: 2px;
@@ -97,9 +97,11 @@ header {
       color: white; }
 
 @media screen and (min-width: 768px) {
-  .cont-menu {
+  .container-menu .cont-menu {
     transform: translateX(0%);
-    max-width: 30%; } }
+    max-width: 30%; }
+    .container-menu .cont-menu nav .container-img .img-bio .img-nav {
+      width: 40%; } }
 
 @media screen and (min-width: 1024px) {
   header {
@@ -113,7 +115,12 @@ header {
       max-width: 18%;
       transform: translateX(0%); }
       .container-menu .cont-menu .icon-cancel {
-        display: none; } }
+        display: none; }
+      .container-menu .cont-menu nav .container-img .img-bio .img-nav {
+        margin-bottom: 5rem;
+        width: 60%; }
+      .container-menu .cont-menu nav ul li a {
+        padding: 20px; } }
 
 body {
   background-color: #191919;
@@ -215,13 +222,13 @@ a:hover {
     display: none; } }
 
 section .btn-inicio {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   padding: 0.5rem 0;
   color: #d65cdc;
   border: 2px solid #393939;
   background-color: #212121;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 2rem;
   letter-spacing: 1px;
   width: 100%; }
@@ -237,7 +244,7 @@ section .container-inicio {
   margin: 8rem 0;
   padding: 4rem 2rem 2rem 2rem; }
   section .container-inicio .cont-inicio {
-    height: 47vh;
+    height: 40vh;
     /* boton de contacto*/ }
     section .container-inicio .cont-inicio h1 {
       text-transform: uppercase;
@@ -252,6 +259,12 @@ section .container-inicio {
       margin: 1rem 0 5rem 0; }
     section .container-inicio .cont-inicio .p-inicio {
       font-style: italic; }
+    section .container-inicio .cont-inicio .container-datos {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: baseline;
+      gap: 1rem; }
     section .container-inicio .cont-inicio #btn-contacto {
       display: none; }
     section .container-inicio .cont-inicio #btn-contacto:checked ~ .datos-de-contacto {
@@ -325,7 +338,8 @@ section .container-inicio {
 
 @media screen and (min-width: 1024px) {
   section .btn-inicio {
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    font-weight: 600; }
   section .container-datos {
     width: 70%; }
   section .container-inicio {
@@ -345,10 +359,6 @@ section .container-inicio {
       font-size: 1.6rem;
       font-weight: 500; }
     section .container-inicio .cont-inicio .container-datos {
-      display: flex;
-      flex-direction: row;
-      justify-content: left;
-      align-items: baseline;
       gap: 2rem; }
     section .container-inicio .cont-inicio .datos-de-contacto {
       margin-top: 3rem;
