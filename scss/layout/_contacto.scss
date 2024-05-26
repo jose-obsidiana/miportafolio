@@ -2,16 +2,16 @@ main {
     section {
         .container-general {
             .container-contacto {
-                @include grid (0.5fr 2fr, 41% 41%);
+                @include grid (1fr 2fr, 42% 42%);
                 @include width-height (100%, 100%);
                 background-color: $negro-claro ;
-                padding: 2rem;
-                row-gap: 18%;
+                padding: 1.5rem;
+                row-gap: 16%;
                 margin-bottom: 1rem;
 
 
                 .container-img {
-                    @include width-height (100%, 100%);
+                    @include width-height (8vh, 8vh);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -21,8 +21,6 @@ main {
                     img {
                         width: 100%;
                         padding: 1.5rem;
-
-
                     }
                 }
 
@@ -30,7 +28,7 @@ main {
                     grid-template-columns: 1;
                     display: grid;
                     align-items: center;
-                    padding: 2rem;
+                    padding: 1rem;
 
                     p {
                         &:hover {
@@ -49,13 +47,12 @@ main {
 
                 .container-iconredes {
                     background-color: $negro-claro ;
-
                     @include flex(row, space-around, center);
 
                     .icon {
                         fill: rgb(120, 116, 116);
-                        width: 45px;
-                        height: 45px;
+                        width: 30px;
+                        height: 30px;
                         transition: fill 0.3s;
                     }
 
@@ -78,7 +75,7 @@ main {
                     .cordoba {
                         padding-left: 0.7rem;
                         margin: 0;
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
                         font-weight: 400;
 
                         &:hover {
@@ -93,8 +90,8 @@ main {
 
                         .icon-ubic {
                             fill: rgb(120, 116, 116);
-                            width: 30px;
-                            height: 30px;
+                            width: 25px;
+                            height: 25px;
                             transition: fill 0.3s;
                         }
 
@@ -111,15 +108,44 @@ main {
 
         @include mq-desktop {
             .container-general {
-                @include grid(1fr 1fr, 1fr);
-                column-gap: 2rem;
+                @include grid(58% 39%, 1fr);
+                column-gap: 3%;
 
                 .container-contacto {
-                    padding: 4rem 0 4rem 4rem;
+                    @include grid (20% 80%, 41% 41%);
+                    padding: 3rem 0 3rem 3rem;
+
+                    .container-img {
+                        @include width-height(100%, 100%);
+                    }
 
                     .numero-contacto {
+                        padding: 2rem;
+
                         p {
-                            font-size: 1.8rem;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+
+                .container-redes {
+                    .container-iconredes {
+                        .icon {
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+
+                    .container-ubicacion {
+                        .cordoba {
+                            font-size: 1.7rem;
+                        }
+
+                        .container-img {
+                            .icon-ubic {
+                                width: 30px;
+                                height: 30px;
+                            }
                         }
                     }
                 }

@@ -3,8 +3,8 @@ main {
         .container-habilidades {
             .container-hab {
                 @include flex(row, left, center);
-                gap: 10rem;
-                margin-bottom: 5rem;
+                margin-bottom: 3rem;
+                gap: 5rem;
 
                 .icon-box:hover .icon-capa {
                     transform: scale(1);
@@ -12,9 +12,9 @@ main {
 
                 .icon-box {
                     position: relative;
-                    @include width-height (6rem, 6rem);
+                    @include width-height (4rem, 4rem);
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
 
                     &:hover {
                         opacity: 0.7;
@@ -31,11 +31,7 @@ main {
                         justify-content: left;
                         align-items: flex-start;
                         transition: .3s ease;
-
                         transform: scale(0);
-
-
-
 
                         .p-habilidades {
                             border: 1px solid $gris-claro;
@@ -43,7 +39,7 @@ main {
                             width: max-content;
                             color: white;
                             margin-top: 1rem;
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                             background-color: $negro-claro;
                             margin-left: 5px;
 
@@ -54,6 +50,26 @@ main {
 
             }
 
+        }
+
+        @include mq-desktop {
+            .container-habilidades {
+                .container-hab {
+                    gap: 10rem;
+                    margin-bottom: 5rem;
+
+                    .icon-box {
+                        flex-direction: row;
+                        @include width-height (6rem, 6rem);
+
+                        .icon-capa {
+                            .p-habilidades {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }

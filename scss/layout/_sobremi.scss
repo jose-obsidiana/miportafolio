@@ -15,7 +15,10 @@ main {
                 div {
                     p {
                         color: $gris-claro;
+                    }
 
+                    .margin-bottom {
+                        margin-bottom: 1.5rem;
                     }
                 }
 
@@ -78,6 +81,8 @@ main {
                                 font-weight: 500;
                             }
 
+
+
                         }
 
                     }
@@ -131,6 +136,13 @@ main {
                     .negrita {
                         font-size: 1.5rem;
                     }
+                }
+
+                div {
+                    .margin-bottom {
+                        margin-bottom: 1.5rem;
+                    }
+
                 }
 
 
