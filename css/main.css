@@ -45,7 +45,7 @@ header {
   /* para ocultar el menu lateral*/
   opacity: 0;
   visibility: hidden;
-  z-index: 1; }
+  z-index: 2; }
   .container-menu .cont-menu {
     width: 100%;
     max-width: 80%;
@@ -244,13 +244,13 @@ section .container-inicio {
   margin: 8rem 0;
   padding: 4rem 2rem 2rem 2rem; }
   section .container-inicio .cont-inicio {
-    height: 40vh;
+    height: 42vh;
     /* boton de contacto*/ }
     section .container-inicio .cont-inicio h1 {
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 1px;
-      font-size: 2rem; }
+      font-size: 2.1rem; }
     section .container-inicio .cont-inicio h2 {
       color: #d65cdc;
       letter-spacing: 1px;
@@ -274,8 +274,9 @@ section .container-inicio {
     section .container-inicio .cont-inicio .datos-de-contacto {
       opacity: 0;
       visibility: hidden;
-      margin-top: 7rem;
-      margin-bottom: 1rem; }
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+      background-color: #191919; }
       section .container-inicio .cont-inicio .datos-de-contacto .flex-row {
         display: flex;
         flex-direction: row;
@@ -334,7 +335,9 @@ section .container-inicio {
         grid-row: 1; }
       section .container-inicio .cont-inicio .p-inicio {
         font-size: 1.5rem;
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+      section .container-inicio .cont-inicio .datos-de-contacto {
+        background-color: #212121; } }
 
 @media screen and (min-width: 1024px) {
   section .btn-inicio {
@@ -362,7 +365,9 @@ section .container-inicio {
       gap: 2rem; }
     section .container-inicio .cont-inicio .datos-de-contacto {
       margin-top: 3rem;
-      gap: 2rem; }
+      display: flex;
+      flex-direction: row;
+      gap: 4rem; }
       section .container-inicio .cont-inicio .datos-de-contacto .flex-row {
         margin-bottom: 1rem;
         padding-bottom: 1rem; }
