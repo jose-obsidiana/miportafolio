@@ -132,13 +132,6 @@ main {
 
     @include mq-desktop2 {
         padding: 4rem 12rem;
-
     }
 
-}
-
-@include mq-desktop {
-    header {
-        display: none;
-    }
 }

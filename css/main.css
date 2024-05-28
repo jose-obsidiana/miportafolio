@@ -89,9 +89,9 @@ header {
             transition: all 400ms ease;
             letter-spacing: 2px;
             font-weight: 500;
-            color: #929292; }
+            color: #959595; }
             .container-menu .cont-menu nav ul li a:hover {
-              border-left: 5px solid #929292;
+              border-left: 5px solid #959595;
               background: #393939; }
     .container-menu .cont-menu .icon-cancel {
       color: white; }
@@ -122,9 +122,13 @@ header {
       .container-menu .cont-menu nav ul li a {
         padding: 20px; } }
 
+@media screen and (min-width: 1024px) {
+  header {
+    display: none; } }
+
 body {
   background-color: #191919;
-  color: #929292;
+  color: #959595;
   font-family: "Montserrat", sans-serif; }
 
 p {
@@ -135,11 +139,11 @@ ul {
   ul li {
     list-style-type: none;
     font-size: 1.4rem;
-    color: #c8c8c8; }
+    color: #c7c7c7; }
 
 span {
   font-size: 1.3rem;
-  color: #c8c8c8; }
+  color: #c7c7c7; }
 
 img {
   width: 100%; }
@@ -184,14 +188,14 @@ a:hover {
   main {
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 5rem; } }
 
 @media screen and (min-width: 768px) {
   main {
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 5rem; } }
 
 @media screen and (min-width: 1024px) {
@@ -216,10 +220,6 @@ a:hover {
 @media screen and (min-width: 1400px) {
   main {
     padding: 4rem 12rem; } }
-
-@media screen and (min-width: 1024px) {
-  header {
-    display: none; } }
 
 section .btn-inicio {
   font-size: 1rem;
@@ -256,7 +256,7 @@ section .container-inicio {
       letter-spacing: 1px;
       font-size: 1.3rem;
       grid-column: 1/3;
-      margin: 1rem 0 5rem 0; }
+      margin: 1rem 0 7rem 0; }
     section .container-inicio .cont-inicio .p-inicio {
       font-style: italic; }
     section .container-inicio .cont-inicio .container-datos {
@@ -292,7 +292,7 @@ section .container-inicio {
           align-items: flex-start;
           border-radius: 50%; }
           section .container-inicio .cont-inicio .datos-de-contacto .flex-row .cont-img .icon-inicio {
-            fill: #929292;
+            fill: #959595;
             width: 2rem;
             padding-bottom: 3px;
             height: 100%; }
@@ -384,7 +384,7 @@ section .container-inicio {
           align-items: normal;
           border-radius: 50%; }
           section .container-inicio .cont-inicio .datos-de-contacto .flex-row .cont-img .icon-inicio {
-            fill: #929292;
+            fill: #959595;
             width: 2rem;
             padding-bottom: 3px; }
             section .container-inicio .cont-inicio .datos-de-contacto .flex-row .cont-img .icon-inicio:hover {
@@ -412,7 +412,7 @@ section .container-inicio {
     main section .container-sobremi .flecha {
       color: #30C080; }
     main section .container-sobremi div p {
-      color: #c8c8c8; }
+      color: #c7c7c7; }
     main section .container-sobremi div .margin-bottom {
       margin-bottom: 1.5rem; }
     main section .container-sobremi .container-datospersonales {
@@ -499,19 +499,64 @@ section .container-inicio {
 
 main section .container-portafolio .portafolio {
   border: 1px solid #393939;
-  padding: 1rem; }
-
-@media screen and (min-width: 1024px) {
-  main section .container-portafolio {
+  padding: 1rem;
+  background-color: #212121;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem; }
+  main section .container-portafolio .portafolio .container-img:hover .capa-proyectos {
+    opacity: 1; }
+  main section .container-portafolio .portafolio .container-img {
+    position: relative;
+    width: 100%;
+    height: auto; }
+  main section .container-portafolio .portafolio .capa-proyectos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+    opacity: 0;
+    transition: all ease-in-out 0.3s; }
+    main section .container-portafolio .portafolio .capa-proyectos a:hover {
+      opacity: 2;
+      background-color: #d65cdc;
+      border-radius: 50%; }
+  main section .container-portafolio .portafolio img {
+    width: 100%;
+    height: auto; }
+  main section .container-portafolio .portafolio h3 {
+    margin-top: 1rem;
+    letter-spacing: 1px; }
+
+@media screen and (min-width: 768px) {
+  main section .container-portafolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 2rem; } }
+
+@media screen and (min-width: 1024px) {
+  main section .container-portafolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
     gap: 2rem;
     width: 100%;
     height: 100%; }
-    main section .container-portafolio .img-proyect {
-      padding-bottom: 1rem; } }
+    main section .container-portafolio .portafolio h3 {
+      font-size: 1.7rem; }
+    main section .container-portafolio .portafolio .container-img .img-proyect {
+      padding-bottom: 1rem;
+      width: 100%;
+      height: 100%; }
+    main section .container-portafolio .portafolio .capa-proyectos {
+      height: 97%; } }
 
 main section .container-habilidades .container-hab {
   display: flex;
@@ -519,7 +564,7 @@ main section .container-habilidades .container-hab {
   justify-content: left;
   align-items: center;
   margin-bottom: 3rem;
-  gap: 5rem; }
+  gap: 7rem; }
   main section .container-habilidades .container-hab .icon-box:hover .icon-capa {
     transform: scale(1); }
   main section .container-habilidades .container-hab .icon-box {
@@ -542,7 +587,7 @@ main section .container-habilidades .container-hab {
       transition: .3s ease;
       transform: scale(0); }
       main section .container-habilidades .container-hab .icon-box .icon-capa .p-habilidades {
-        border: 1px solid #c8c8c8;
+        border: 1px solid #c7c7c7;
         padding: 0 0.5rem;
         width: max-content;
         color: white;
@@ -551,16 +596,20 @@ main section .container-habilidades .container-hab {
         background-color: #212121;
         margin-left: 5px; }
 
+@media screen and (min-width: 768px) {
+  main section .container-habilidades .container-hab {
+    gap: 10rem; }
+    main section .container-habilidades .container-hab .icon-box {
+      flex-direction: row;
+      width: 6rem;
+      height: 6rem; } }
+
 @media screen and (min-width: 1024px) {
   main section .container-habilidades .container-hab {
     gap: 10rem;
     margin-bottom: 5rem; }
-    main section .container-habilidades .container-hab .icon-box {
-      flex-direction: row;
-      width: 6rem;
-      height: 6rem; }
-      main section .container-habilidades .container-hab .icon-box .icon-capa .p-habilidades {
-        font-size: 1.5rem; } }
+    main section .container-habilidades .container-hab .icon-box .icon-capa .p-habilidades {
+      font-size: 1.5rem; } }
 
 main section .container-general .container-contacto {
   display: grid;
@@ -589,7 +638,7 @@ main section .container-general .container-contacto {
     align-items: center;
     padding: 1rem; }
     main section .container-general .container-contacto .numero-contacto p:hover {
-      color: #d65cdc; }
+      color: #30C080; }
 
 main section .container-general .container-redes {
   display: grid;
@@ -625,7 +674,7 @@ main section .container-general .container-redes {
       font-size: 1.5rem;
       font-weight: 400; }
       main section .container-general .container-redes .container-ubicacion .cordoba:hover {
-        color: #d65cdc; }
+        color: #30C080; }
     main section .container-general .container-redes .container-ubicacion .container-img {
       align-items: center; }
       main section .container-general .container-redes .container-ubicacion .container-img .icon-ubic {
@@ -635,6 +684,26 @@ main section .container-general .container-redes {
         transition: fill 0.3s; }
       main section .container-general .container-redes .container-ubicacion .container-img .icon:hover {
         fill: #30C080; }
+
+@media screen and (min-width: 600px) {
+  main section .container-general .container-contacto {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 41% 41%;
+    width: 100%;
+    height: 25vh; } }
+
+@media screen and (min-width: 768px) {
+  main section .container-general .container-contacto {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 41% 41%;
+    width: 100%;
+    height: 40vh;
+    padding: 3rem 0 3rem 3rem; }
+    main section .container-general .container-contacto .container-img {
+      width: 90%;
+      height: 15vh; } }
 
 @media screen and (min-width: 1024px) {
   main section .container-general {
@@ -646,6 +715,8 @@ main section .container-general .container-redes {
       display: grid;
       grid-template-columns: 20% 80%;
       grid-template-rows: 41% 41%;
+      width: 100%;
+      height: 100%;
       padding: 3rem 0 3rem 3rem; }
       main section .container-general .container-contacto .container-img {
         width: 100%;

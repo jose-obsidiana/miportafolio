@@ -194,3 +194,9 @@ header {
         }
     }
 }
+
+@include mq-desktop {
+    header {
+        display: none;
+    }
+}

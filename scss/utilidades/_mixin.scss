@@ -22,14 +22,14 @@
 @mixin margin-mobile {
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
 }
 
 @mixin margin-tablet {
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
 }
 
@@ -40,11 +40,21 @@
     margin-bottom: 10rem;
 }
 
+@mixin margin-desktop2 {
+    margin-left: 18rem;
+    margin-right: 18rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
+
 @mixin mq-mobile {
     @media screen and (min-width: 324px) {
         @content;
     }
 }
+
+
 
 @mixin mq-tablet {
     @media screen and (min-width: 768px) {

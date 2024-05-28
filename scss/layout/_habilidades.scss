@@ -4,7 +4,7 @@ main {
             .container-hab {
                 @include flex(row, left, center);
                 margin-bottom: 3rem;
-                gap: 5rem;
+                gap: 7rem;
 
                 .icon-box:hover .icon-capa {
                     transform: scale(1);
@@ -52,6 +52,19 @@ main {
 
         }
 
+        @include mq-tablet {
+            .container-habilidades {
+                .container-hab {
+                    gap: 10rem;
+
+                    .icon-box {
+                        flex-direction: row;
+                        @include width-height (6rem, 6rem);
+                    }
+                }
+            }
+        }
+
         @include mq-desktop {
             .container-habilidades {
                 .container-hab {
@@ -59,9 +72,6 @@ main {
                     margin-bottom: 5rem;
 
                     .icon-box {
-                        flex-direction: row;
-                        @include width-height (6rem, 6rem);
-
                         .icon-capa {
                             .p-habilidades {
                                 font-size: 1.5rem;
