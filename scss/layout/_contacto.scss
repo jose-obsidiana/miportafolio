@@ -120,12 +120,13 @@ main {
         @include mq-tablet {
             .container-general {
                 .container-contacto {
-                    @include grid (20% 80%, 41% 41%);
-                    @include width-height (100%, 40vh);
+                    @include grid (20% 80%, 35% 35%);
+                    @include width-height (100%, 25vh);
                     padding: 3rem 0 3rem 3rem;
+                    row-gap: 5rem;
 
                     .container-img {
-                        @include width-height(90%, 15vh);
+                        @include width-height(90%, 8vh);
                     }
 
                 }
