@@ -89,9 +89,9 @@ header {
             transition: all 400ms ease;
             letter-spacing: 2px;
             font-weight: 500;
-            color: #959595; }
+            color: #989898; }
             .container-menu .cont-menu nav ul li a:hover {
-              border-left: 5px solid #959595;
+              border-left: 5px solid #989898;
               background: #393939; }
     .container-menu .cont-menu .icon-cancel {
       color: white; }
@@ -128,11 +128,12 @@ header {
 
 body {
   background-color: #191919;
-  color: #959595;
+  color: #989898;
   font-family: "Montserrat", sans-serif; }
 
 p {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-align: justify; }
 
 ul {
   padding: 0; }
@@ -169,7 +170,8 @@ h2 {
   font-weight: 600;
   font-family: "Lato", sans-serif;
   margin-bottom: 3rem;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  letter-spacing: 1.5px; }
 
 h3 {
   font-family: "Lato", sans-serif;
@@ -196,7 +198,9 @@ a:hover {
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 6rem;
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem; }
+    main h2 {
+      font-size: 3rem; } }
 
 @media screen and (min-width: 1024px) {
   main {
@@ -244,7 +248,7 @@ section .container-inicio {
   margin: 8rem 0;
   padding: 4rem 2rem 2rem 2rem; }
   section .container-inicio .cont-inicio {
-    height: 44vh;
+    height: 46vh;
     /* boton de contacto*/ }
     section .container-inicio .cont-inicio h1 {
       text-transform: uppercase;
@@ -256,7 +260,7 @@ section .container-inicio {
       letter-spacing: 1px;
       font-size: 1.3rem;
       grid-column: 1/3;
-      margin: 1rem 0 7rem 0; }
+      margin: 0 0 7rem 0; }
     section .container-inicio .cont-inicio .p-inicio {
       font-style: italic; }
     section .container-inicio .cont-inicio .container-datos {
@@ -292,7 +296,7 @@ section .container-inicio {
           align-items: flex-start;
           border-radius: 50%; }
           section .container-inicio .cont-inicio .datos-de-contacto .flex-row .cont-img .icon-inicio {
-            fill: #959595;
+            fill: #989898;
             width: 2rem;
             padding-bottom: 3px;
             height: 100%; }
@@ -356,8 +360,9 @@ section .container-inicio {
       font-size: 4rem; }
     section .container-inicio .cont-inicio .h2-inicio {
       font-size: 1.7rem;
-      margin: 2rem 0;
-      margin-bottom: 7rem; }
+      margin: 1rem 0;
+      margin-bottom: 7rem;
+      letter-spacing: 1.5px; }
     section .container-inicio .cont-inicio .p-inicio {
       font-size: 1.6rem;
       font-weight: 500; }
@@ -384,7 +389,7 @@ section .container-inicio {
           align-items: normal;
           border-radius: 50%; }
           section .container-inicio .cont-inicio .datos-de-contacto .flex-row .cont-img .icon-inicio {
-            fill: #959595;
+            fill: #989898;
             width: 2rem;
             padding-bottom: 3px; }
             section .container-inicio .cont-inicio .datos-de-contacto .flex-row .cont-img .icon-inicio:hover {
@@ -503,18 +508,21 @@ main section .container-portafolio .portafolio {
   background-color: #212121;
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem; }
+  main section .container-portafolio .portafolio p {
+    text-align: left; }
   main section .container-portafolio .portafolio .container-img:hover .capa-proyectos {
     opacity: 1; }
   main section .container-portafolio .portafolio .container-img {
-    position: relative;
-    width: 100%;
-    height: auto; }
+    position: relative; }
+  main section .container-portafolio .portafolio .img-saturate {
+    filter: saturate(0.7);
+    opacity: 0.8; }
   main section .container-portafolio .portafolio .capa-proyectos {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;

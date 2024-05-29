@@ -1,8 +1,6 @@
 main {
     section {
         .container-portafolio {
-
-
             .portafolio {
                 border: 1px solid $gris-oscuro;
                 padding: 1rem;
@@ -10,22 +8,29 @@ main {
                 box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.25);
                 margin-bottom: 2rem;
 
+                p {
+                    text-align: left;
+                }
+
                 .container-img:hover .capa-proyectos {
                     opacity: 1;
                 }
 
                 .container-img {
                     position: relative;
-                    width: 100%;
-                    height: auto;
 
+                }
+
+                .img-saturate {
+                    filter: saturate(0.7);
+                    opacity: 0.8;
                 }
 
                 .capa-proyectos {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    @include width-height(100%, 100%);
+                    @include width-height(100%, auto);
                     background-color: rgba(0, 0, 0, 0.7);
                     display: flex;
                     flex-direction: row;
@@ -48,8 +53,6 @@ main {
                 img {
                     width: 100%;
                     height: auto;
-
-
                 }
 
                 h3 {
