@@ -10,6 +10,7 @@ main {
 
                 p {
                     text-align: left;
+                    margin-bottom: 0;
                 }
 
                 .container-img:hover .capa-proyectos {
@@ -22,15 +23,15 @@ main {
                 }
 
                 .img-saturate {
-                    filter: saturate(0.7);
-                    opacity: 0.8;
+                    filter: saturate(0.9);
+                    opacity: 0.9;
                 }
 
                 .capa-proyectos {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    @include width-height(100%, auto);
+                    @include width-height(100%, 100%);
                     background-color: rgba(0, 0, 0, 0.7);
                     display: flex;
                     flex-direction: row;
@@ -56,7 +57,7 @@ main {
                 }
 
                 h3 {
-                    margin-top: 1rem;
+
                     letter-spacing: 1px;
                 }
             }
