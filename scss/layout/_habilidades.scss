@@ -4,7 +4,7 @@ main {
             .container-hab {
                 @include flex(row, left, center);
                 margin-bottom: 3rem;
-                gap: 7rem;
+                gap: 5%;
 
                 .icon-box:hover .icon-capa {
                     transform: scale(1);
@@ -12,7 +12,7 @@ main {
 
                 .icon-box {
                     position: relative;
-                    @include width-height (4rem, 4rem);
+                    @include width-height (100%, 100%);
                     display: flex;
                     flex-direction: column;
 
@@ -22,7 +22,7 @@ main {
 
 
                     .img-hab {
-                        @include width-height(70%, 70%);
+                        @include width-height(70em, 70em);
                     }
 
                     .icon-capa {

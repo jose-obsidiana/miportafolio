@@ -576,20 +576,20 @@ main section .container-habilidades .container-hab {
   justify-content: left;
   align-items: center;
   margin-bottom: 3rem;
-  gap: 7rem; }
+  gap: 5%; }
   main section .container-habilidades .container-hab .icon-box:hover .icon-capa {
     transform: scale(1); }
   main section .container-habilidades .container-hab .icon-box {
     position: relative;
-    width: 4rem;
-    height: 4rem;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column; }
     main section .container-habilidades .container-hab .icon-box:hover {
       opacity: 0.7; }
     main section .container-habilidades .container-hab .icon-box .img-hab {
-      width: 70%;
-      height: 70%; }
+      width: 70em;
+      height: 70em; }
     main section .container-habilidades .container-hab .icon-box .icon-capa {
       width: 100%;
       height: 100%;
