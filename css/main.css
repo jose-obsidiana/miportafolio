@@ -309,15 +309,15 @@ section .container-inicio {
     section .container-inicio .cont-inicio .cubos {
       display: none; }
     section .container-inicio .cont-inicio .cubo {
-      width: 7rem;
+      width: 10rem;
       position: relative;
       z-index: 0;
-      left: 60%;
+      left: 58%;
       opacity: 0.1; }
     section .container-inicio .cont-inicio .cubo-dos {
       grid-column: 2;
       top: 20%;
-      left: 50%; }
+      left: 40%; }
 
 @media screen and (min-width: 768px) {
   section .container-datos {
@@ -500,7 +500,7 @@ section .container-inicio {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      padding: 10rem 0 0 0; }
+      padding: 7rem 0 0 0; }
       main section .container-sobremi .container-certificados .img-box {
         width: 100%; }
         main section .container-sobremi .container-certificados .img-box img {
